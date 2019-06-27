@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0139F908832C931383D08A67 /* Pods_Goffstown_Sports_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F8BDEAF1199BD9F4AF2478 /* Pods_Goffstown_Sports_App.framework */; };
 		DE9F948E22C539D800631400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9F948D22C539D800631400 /* AppDelegate.swift */; };
 		DE9F949022C539D800631400 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9F948F22C539D800631400 /* ViewController.swift */; };
 		DE9F949322C539D800631400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9F949122C539D800631400 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DF1C2DF21637D2EA399AD55 /* Pods-Goffstown-Sports-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goffstown-Sports-App.release.xcconfig"; path = "Target Support Files/Pods-Goffstown-Sports-App/Pods-Goffstown-Sports-App.release.xcconfig"; sourceTree = "<group>"; };
+		A15440BFAFF3DB2F82CAAE24 /* Pods-Goffstown-Sports-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goffstown-Sports-App.debug.xcconfig"; path = "Target Support Files/Pods-Goffstown-Sports-App/Pods-Goffstown-Sports-App.debug.xcconfig"; sourceTree = "<group>"; };
+		C6F8BDEAF1199BD9F4AF2478 /* Pods_Goffstown_Sports_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goffstown_Sports_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9F948A22C539D800631400 /* Goffstown-Sports-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goffstown-Sports-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9F948D22C539D800631400 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE9F948F22C539D800631400 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0139F908832C931383D08A67 /* Pods_Goffstown_Sports_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38DD0D444AABE2F0650FCA1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6F8BDEAF1199BD9F4AF2478 /* Pods_Goffstown_Sports_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE9F948122C539D800631400 = {
 			isa = PBXGroup;
 			children = (
 				DE9F948C22C539D800631400 /* Goffstown-Sports-App */,
 				DE9F948B22C539D800631400 /* Products */,
+				F00469220DE1823BAB1A92E6 /* Pods */,
+				38DD0D444AABE2F0650FCA1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,16 @@
 			path = "Goffstown-Sports-App";
 			sourceTree = "<group>";
 		};
+		F00469220DE1823BAB1A92E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A15440BFAFF3DB2F82CAAE24 /* Pods-Goffstown-Sports-App.debug.xcconfig */,
+				1DF1C2DF21637D2EA399AD55 /* Pods-Goffstown-Sports-App.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE9F949C22C539D900631400 /* Build configuration list for PBXNativeTarget "Goffstown-Sports-App" */;
 			buildPhases = (
+				B6D977FC4C445A5EA9E2ED75 /* [CP] Check Pods Manifest.lock */,
 				DE9F948622C539D800631400 /* Sources */,
 				DE9F948722C539D800631400 /* Frameworks */,
 				DE9F948822C539D800631400 /* Resources */,
+				90CC889576DCF8881A6FD7D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		90CC889576DCF8881A6FD7D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goffstown-Sports-App/Pods-Goffstown-Sports-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goffstown-Sports-App/Pods-Goffstown-Sports-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goffstown-Sports-App/Pods-Goffstown-Sports-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6D977FC4C445A5EA9E2ED75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Goffstown-Sports-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE9F948622C539D800631400 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		DE9F949D22C539D900631400 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A15440BFAFF3DB2F82CAAE24 /* Pods-Goffstown-Sports-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		DE9F949E22C539D900631400 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DF1C2DF21637D2EA399AD55 /* Pods-Goffstown-Sports-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
