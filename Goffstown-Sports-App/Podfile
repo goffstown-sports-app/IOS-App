@@ -8,4 +8,5 @@ target 'Goffstown-Sports-App' do
   # Pods for Goffstown-Sports-App
   pod 'Firebase/Database'
   pod 'Firebase/Core'
+  pod 'Firebase/Analytics'
 end
